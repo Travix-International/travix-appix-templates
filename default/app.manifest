@@ -1,0 +1,24 @@
+{
+    "name": "{APP_NAME}",
+    "description": "Application initialized with the HelloWorld app template.",
+    "version": "0.0.2",
+    "publisher": "Stark Industries",
+    "ui": {
+        "widgets": {
+            "helloWorldWidget": {
+                "targetContainers": [
+                    "helloWorldRegion"
+                ]
+            }
+        }
+    },
+    "api": {
+        "environments": {
+            "development": {
+                "serviceUrls": {
+                    
+                }
+            }
+        }
+    }
+}
