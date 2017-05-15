@@ -2,6 +2,7 @@
   "version": "1.0.0",
   "description": "This package.json is provided for development purposes, to set up the required development dependencies for linting and testing.",
   "main": "index.js",
+  "private": true,
   "dependencies": {
     "frint": "^1.3.0",
     "frint-react": "^1.3.0",
