@@ -2,20 +2,6 @@ import { observe, streamProps } from 'frint-react';
 import React from 'react';
 
 const Root = React.createClass({
-  addProductToCart() {
-    const { shoppingCartService, appId } = this.props;
-
-    // eslint-disable-next-line no-alert,no-undef
-    alert(`TODO: Implement the steps in the description, and remove this alert!`);
-
-    shoppingCartService.addItem({
-      AppId: appId,
-      Quantity: 1,
-      ProductId: 'TODO: Fill in ProductID',
-      ProductParameters: 'TODO: Fill in your custom product parameters'
-    });
-  },
-
   render() {
     // TODO: This style is only here for debugging purposes, feel free to remove it!
     const borderStyle = { border: 'solid 2px red', padding: '16px' };
@@ -51,6 +37,15 @@ export default observe(function doObserve(app) {
   return streamProps({})
     .set('appName', app.getOption('appName'))
     .set('appId', app.getOption('appId'))
-    .set('shoppingCartService', app.get('shoppingCart'))
+    .set('addProductToCart', () => {
+       alert(`TODO: Implement the steps in the description, and remove this alert!`);
+
+       app.get('shoppingCart').addItem({
+         AppId: app.getOption('appId'),
+         Quantity: 1,
+         ProductId: 'TODO: Fill in ProductID',
+         ProductParameters: 'TODO: Fill in your custom product parameters'
+       });
+    })
     .get$();
 })(Root);
