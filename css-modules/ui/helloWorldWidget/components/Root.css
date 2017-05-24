@@ -4,5 +4,7 @@
 }
 
 @media --tx-breakpoint-small {
-  padding: 0;
+  .bordered {
+    padding: 0;
+  }
 }
