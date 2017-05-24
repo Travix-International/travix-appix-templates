@@ -28,7 +28,7 @@ function Root({ appName, appId }) {
 
 export default observe(function doObserve(app) {
   return streamProps({})
-    .set('appName', app.getOption('name'))
-    .set('appId', app.getOption('id'))
+    .set('appName', app.getOption('appName'))
+    .set('appId', app.getOption('appId'))
     .get$();
 })(Root);
