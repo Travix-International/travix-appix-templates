@@ -1,9 +1,11 @@
+@value small from "travix-breakpoints/variables.css";
+
 .bordered {
   border: solid 2px red;
   padding: 16px;
 }
 
-@media --tx-breakpoint-small {
+@media small {
   .bordered {
     padding: 0;
   }
