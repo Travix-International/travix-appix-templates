@@ -6,11 +6,14 @@ import {
   italic,
   boldAndItalic
 } from '../styles/typography.css';
-import { bordered } from './Root.css';
+import {
+  bordered,
+  squaredBackground
+} from './Root.css';
 
 function Root({ appName, appId }) {
   return (
-    <div className={bordered}>
+    <div className={`${bordered} ${squaredBackground}`}>
       <h2>App: {appName}</h2>
 
       <p className={bold}>

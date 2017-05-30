@@ -10,3 +10,8 @@
     padding: 0;
   }
 }
+
+/* image urls are relative to your `assets` directory */
+.squaredBackground {
+  background: url(img/hip-square.png);
+}
