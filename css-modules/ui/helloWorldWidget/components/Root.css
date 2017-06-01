@@ -1,0 +1,17 @@
+@value small from "travix-breakpoints/variables.css";
+
+.bordered {
+  border: solid 2px red;
+  padding: 16px;
+}
+
+@media small {
+  .bordered {
+    padding: 0;
+  }
+}
+
+/* image urls are relative to your `assets` directory */
+.squaredBackground {
+  background: url(img/hip-square.png);
+}
