@@ -1,13 +1,13 @@
 import { createApp } from 'frint';
 
-import Root from './components/Root';
+import Index from './components/Index';
 
 export default createApp({
   name: 'widget-helloWorld',
   providers: [
     {
       name: 'component',
-      useValue: Root
+      useValue: Index
     }
   ]
 });
