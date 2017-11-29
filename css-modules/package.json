@@ -3,9 +3,9 @@
   "description": "This package.json is provided for development purposes, to set up the required development dependencies for linting and testing.",
   "main": "index.js",
   "dependencies": {
-    "frint": "^1.3.0",
-    "frint-react": "^1.3.0",
-    "react": "^0.14.9"
+    "frint-preset-travix": "^5.1.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -15,9 +15,7 @@
     "eslint-config-travix": "^2.3.2",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^7.0.0",
-    "frint-preset-travix": "^1.3.0",
-    "react-dom": "^0.14.9"
+    "eslint-plugin-react": "^7.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
