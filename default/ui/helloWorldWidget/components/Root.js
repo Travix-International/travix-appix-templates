@@ -1,7 +1,7 @@
 import { observe, streamProps } from 'frint-react';
 import React from 'react';
 
-const Root = React.createClass({
+class Root extends React.Component {
   addProductToCart() {
     const { shoppingCartService, appId } = this.props;
 
@@ -14,7 +14,7 @@ const Root = React.createClass({
       ProductId: 'TODO: Fill in ProductID',
       ProductParameters: 'TODO: Fill in your custom product parameters'
     });
-  },
+  }
 
   render() {
     // TODO: This style is only here for debugging purposes, feel free to remove it!
@@ -45,7 +45,7 @@ const Root = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default observe(function doObserve(app) {
   return streamProps({})
